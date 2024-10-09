@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import loginImage from './components/image3.png';
 
 const AuthenticationPage = () => {
-  const [isLogin, setIsLogin] = useState(true); // Default to login page
+  const [isLogin, setIsLogin] = useState(true); 
 
   const handleCheckboxChange = (e) => {
-    setIsLogin(e.target.checked); // Update state based on the hidden checkbox
+    setIsLogin(e.target.checked); 
   };
 
   return (
     <div className="flex min-h-screen bg-gray-100">
-      {/* Image Section */}
+     
       <div className="hidden md:block md:w-1/2 bg-blue-500">
         <img
           src={loginImage}
@@ -20,7 +20,7 @@ const AuthenticationPage = () => {
       </div>
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <div className="p-8 bg-white shadow-lg rounded-md max-w-md w-full">
-        {/* Conditional Headline */}
+      
         <h2 className="text-2xl font-bold mb-2 text-center">
           {isLogin ? "Login" : "Register"}
         </h2>
@@ -28,7 +28,7 @@ const AuthenticationPage = () => {
           See your growth and get support!
         </p>
 
-        {/* Hidden checkbox to toggle between login and signup */}
+        
         <input
           type="checkbox"
           checked={isLogin}
@@ -37,7 +37,7 @@ const AuthenticationPage = () => {
         />
 
         {isLogin ? (
-          // Login Form
+        
           <form>
             <div className="mb-4">
               <label htmlFor="loginEmail" className="block text-sm font-medium">
@@ -92,7 +92,7 @@ const AuthenticationPage = () => {
             </p>
           </form>
         ) : (
-          // Signup Form
+         
           <form>
             <div className="mb-4">
               <label htmlFor="firstName" className="block text-sm font-medium">
