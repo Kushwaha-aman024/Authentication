@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import loginImage from './components/image3.png';
 
 const AuthenticationPage = () => {
   const [isLogin, setIsLogin] = useState(true); 
@@ -8,6 +9,13 @@ const AuthenticationPage = () => {
   };
 
   return (
+    <div className="hidden md:block md:w-1/2 bg-blue-500">
+  <img
+    src={loginImage}
+    alt="Login"
+    className="object-cover w-full h-full"
+  />
+</div>
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <div className="p-8 bg-white shadow-lg rounded-md max-w-md w-full">
        
