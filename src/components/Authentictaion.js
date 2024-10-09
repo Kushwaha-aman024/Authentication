@@ -8,16 +8,6 @@ const AuthenticationPage = () => {
   };
 
   return (
-    <div className="flex min-h-screen bg-gray-100">
-     
-<<<<<<< HEAD
-    <div className="hidden md:block md:w-1/2 bg-blue-500">
-      <img
-        src={loginImage}
-        alt="Login"
-        className="object-cover w-full h-full"
-      />
-      </div>
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <div className="p-8 bg-white shadow-lg rounded-md max-w-md w-full">
        
@@ -26,24 +16,6 @@ const AuthenticationPage = () => {
         </h2>
 
        
-=======
-      <div className="hidden md:block md:w-1/2 bg-blue-500">
-        <img
-          src={loginImage}
-          alt="Login"
-          className="object-cover w-full h-full"
-        />
-      </div>
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <div className="p-8 bg-white shadow-lg rounded-md max-w-md w-full">
-      
-        <h2 className="text-2xl font-bold mb-2 text-center">
-          {isLogin ? "Login" : "Register"}
-        </h2>
-        <p className="text-center mb-6">
-          See your growth and get support!
-        </p>
->>>>>>> ef91287d1b684f84c2d603d6ee0bfda86310d09f
         <input
           type="checkbox"
           checked={isLogin}
@@ -52,10 +24,6 @@ const AuthenticationPage = () => {
         />
 
         {isLogin ? (
-<<<<<<< HEAD
-=======
-        
->>>>>>> ef91287d1b684f84c2d603d6ee0bfda86310d09f
           <form>
             <p className="text mb-6">
           See your growth and get support!
@@ -105,7 +73,7 @@ const AuthenticationPage = () => {
             >
               Login
             </button>
-            <p className="mt-4 text-sm">
+            <p className="text-center mt-4 text-sm">
               Not registered yet?{" "}
               <span className="text-indigo-600 cursor-pointer" onClick={() => setIsLogin(false)}>
                Create a new Account
@@ -113,17 +81,12 @@ const AuthenticationPage = () => {
             </p>
           </form>
         ) : (
-<<<<<<< HEAD
           
           <form>
             <p className="text-blue-600">Manage all your inventory efficiently</p>
             <p>Let's get you all setup so you can verify your personal account and begin setting up your work profile.</p>
+            <br></br>
             <div className="flex gap-4 mb-4">
-=======
-         
-          <form>
-          <div className="flex gap-4 mb-4">
->>>>>>> ef91287d1b684f84c2d603d6ee0bfda86310d09f
             <div className="w-1/2">
               <label htmlFor="firstName" className="block text-sm font-medium">
                 First Name*
@@ -146,13 +109,8 @@ const AuthenticationPage = () => {
                 placeholder="Enter your last name"
               />
             </div>
-<<<<<<< HEAD
             </div>
             <div className="flex gap-4 mb-4">
-=======
-          </div>
-          <div className="flex gap-4 mb-4">
->>>>>>> ef91287d1b684f84c2d603d6ee0bfda86310d09f
             <div className="w-1/2">
               <label htmlFor="phone" className="block text-sm font-medium">
                 Phone*
@@ -175,11 +133,7 @@ const AuthenticationPage = () => {
                 placeholder="Enter your email"
               />
             </div>
-<<<<<<< HEAD
             </div>
-=======
-          </div>
->>>>>>> ef91287d1b684f84c2d603d6ee0bfda86310d09f
             <div className="mb-4">
               <label htmlFor="signupPassword" className="block text-sm font-medium">
                 Password* 
@@ -212,22 +166,15 @@ const AuthenticationPage = () => {
             >
               Sign Up
             </button>
-<<<<<<< HEAD
             <p className=" mt-4 text-sm">
               Already have an account?{" "}
               <span className="text-blue-800 cursor-pointer" onClick={() => setIsLogin(true)}>
-=======
-            <p className="mt-4 text-sm">
-              Already have an account?{" "}
-              <span className="text-blue-600 cursor-pointer" onClick={() => setIsLogin(true)}>
->>>>>>> ef91287d1b684f84c2d603d6ee0bfda86310d09f
                 Login
               </span>
             </p>
           </form>
         )}
       </div>
-    </div>
     </div>
   );
 };
