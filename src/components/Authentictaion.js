@@ -27,8 +27,6 @@ const AuthenticationPage = () => {
         <p className="text-center mb-6">
           See your growth and get support!
         </p>
-
-        
         <input
           type="checkbox"
           checked={isLogin}
@@ -84,7 +82,7 @@ const AuthenticationPage = () => {
             >
               Login
             </button>
-            <p className="text-center mt-4 text-sm">
+            <p className="mt-4 text-sm">
               Not registered yet?{" "}
               <span className="text-indigo-600 cursor-pointer" onClick={() => setIsLogin(false)}>
                Create a new Account
@@ -94,7 +92,8 @@ const AuthenticationPage = () => {
         ) : (
          
           <form>
-            <div className="mb-4">
+          <div className="flex gap-4 mb-4">
+            <div className="w-1/2">
               <label htmlFor="firstName" className="block text-sm font-medium">
                 First Name*
               </label>
@@ -105,7 +104,7 @@ const AuthenticationPage = () => {
                 placeholder="Enter your first name"
               />
             </div>
-            <div className="mb-4">
+            <div className="w-1/2">
               <label htmlFor="lastName" className="block text-sm font-medium">
                 Last Name*
               </label>
@@ -116,7 +115,9 @@ const AuthenticationPage = () => {
                 placeholder="Enter your last name"
               />
             </div>
-            <div className="mb-4">
+          </div>
+          <div className="flex gap-4 mb-4">
+            <div className="w-1/2">
               <label htmlFor="phone" className="block text-sm font-medium">
                 Phone*
               </label>
@@ -127,7 +128,7 @@ const AuthenticationPage = () => {
                 placeholder="Enter your phone number"
               />
             </div>
-            <div className="mb-4">
+            <div className="w-1/2">
               <label htmlFor="signupEmail" className="block text-sm font-medium">
                 Email*
               </label>
@@ -138,6 +139,7 @@ const AuthenticationPage = () => {
                 placeholder="Enter your email"
               />
             </div>
+          </div>
             <div className="mb-4">
               <label htmlFor="signupPassword" className="block text-sm font-medium">
                 Password* 
@@ -170,9 +172,9 @@ const AuthenticationPage = () => {
             >
               Sign Up
             </button>
-            <p className="text-center mt-4 text-sm">
+            <p className="mt-4 text-sm">
               Already have an account?{" "}
-              <span className="text-indigo-600 cursor-pointer" onClick={() => setIsLogin(true)}>
+              <span className="text-blue-600 cursor-pointer" onClick={() => setIsLogin(true)}>
                 Login
               </span>
             </p>
