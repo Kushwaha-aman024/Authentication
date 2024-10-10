@@ -1,9 +1,11 @@
-import AuthenticationPage from "./components/Authentictaion";
+import LoginPage from "./components/Login";
+import SignupPage from "./components/Signup";
 
 function App() {
   return (
     <div>
-      <AuthenticationPage />
+      <LoginPage />
+      <SignupPage/>
     </div>
   );
 }
